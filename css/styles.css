@@ -9,8 +9,8 @@
   --bg-color-header: #ececec;
   --black-color: #000000;
   --address-color: rgba(255, 255, 255, 0.6);
-  --font-family-logo: Raleway;
-  --primery-font-family: Roboto;
+  --font-family-logo: Raleway, sans-serif;
+  --primery-font-family: Roboto, sans-serif;
   --bg-color-white: #eeeeee;
 }
 
@@ -24,11 +24,10 @@
 body {
   font-family: var(--primery-font-family);
   background: var(--white-color);
-  width: 1600px;
 }
 
 .container {
-  width: 1600px;
+  width: 1200;
 }
 
 .title {
@@ -41,6 +40,20 @@ body {
   font-weight: 400;
   letter-spacing: 0.03em;
   color: var(--primery-text-color);
+}
+
+.portfolio .visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
 /* header */
@@ -74,6 +87,7 @@ body {
 .contact-list a {
   text-decoration: none;
   color: #212121;
+  cursor: pointer;
 }
 
 .contact-list a {
@@ -109,6 +123,7 @@ body {
   text-align: Center;
   letter-spacing: 0.06em;
   color: var(--white-color);
+  text-transform: uppercase;
 }
 
 .hero .order-service {
@@ -121,6 +136,7 @@ body {
   color: var(--white-color);
   background-color: var(--accent-color);
   border-style: none;
+  cursor: pointer;
 }
 
 .hero .order-service:hover,
@@ -138,6 +154,7 @@ body {
   font-size: 14px;
   line-height: 1.143;
   text-align: Left;
+  text-transform: uppercase;
 }
 
 .features .text {
@@ -208,18 +225,32 @@ body {
   list-style: none;
 }
 
+.footer-address {
+  text-decoration: none;
+}
+
 .footer-address-list .item-address {
   color: var(--white-color);
 }
+
 .footer-address-list .item-mail,
 .footer-address-list .item-tel {
   color: var(--address-color);
 }
 
+.footer-address-list .item-mail:hover,
+.footer-address-list .item-mail:focus,
+.footer-address-list .item-tel:hover,
+.footer-address-list .item-tel:focus {
+  color: var(--accent-color);
+}
+
+.footer-address-list a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
 /* PORTFOLIO*/
-/*.portfolio {
-  background-color: var(--bg-color-white);
-}*/
 
 .portfolio .filters,
 .portfolio .projects {
@@ -236,16 +267,13 @@ body {
   color: var(--title-text-color);
   background-color: var(--bg-color-section);
   border-style: none;
+  cursor: pointer;
 }
 
 .portfolio .filters-button:hover,
 .portfolio .filters-button:focus {
   color: var(--white-color);
   background-color: var(--accent-color);
-}
-
-.portfolio .projects {
-  background-color: var(--bg-color-white);
 }
 
 .portfolio .projects-item a {
