@@ -22,6 +22,7 @@
 body {
   font-family: var(--primery-font-family);
   background: var(--white-color);
+  color: var(--primery-text-color);
 }
 
 .container {
@@ -37,7 +38,6 @@ body {
 .text {
   font-weight: 400;
   letter-spacing: 0.03em;
-  color: var(--primery-text-color);
 }
 
 .visually-hidden {
@@ -83,7 +83,6 @@ body {
 .contact-list a {
   text-decoration: none;
   color: var(--title-text-color);
-  cursor: pointer;
 }
 
 .contact-list a {
@@ -233,7 +232,6 @@ body {
 }
 
 .footer-address {
-  text-decoration: none;
   width: 231px;
 }
 
@@ -257,7 +255,6 @@ body {
 
 .footer-address-list a {
   text-decoration: none;
-  cursor: pointer;
 }
 
 /* PORTFOLIO*/
