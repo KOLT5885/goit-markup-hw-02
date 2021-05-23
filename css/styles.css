@@ -6,7 +6,7 @@
   --white-color: #ffffff;
   --accent-color-button: #188ce8;
   --bg-color-section: #f5f4fa;
-  --bg-color-header: #ececec;
+  /*--bg-color-header: #ececec;*/
   --black-color: #000000;
   --address-color: rgba(255, 255, 255, 0.6);
   --font-family-logo: Raleway, sans-serif;
@@ -57,9 +57,9 @@ body {
 }
 
 /* header */
-.header {
+/*.header {
   background: var(--bg-color-header);
-}
+}*/
 
 .logo {
   font-family: var(--font-family-logo);
