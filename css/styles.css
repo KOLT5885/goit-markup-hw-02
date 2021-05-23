@@ -10,7 +10,6 @@
   --address-color: rgba(255, 255, 255, 0.6);
   --font-family-logo: Raleway, sans-serif;
   --primery-font-family: Roboto, sans-serif;
-  --bg-color-white: #eeeeee;
 }
 
 /* global */
@@ -93,10 +92,13 @@ body {
 
 .nav-list a:hover,
 .nav-list a:focus,
+.nav-list a:active,
 .phone-link:hover,
 .phone-link:focus,
+.phone-link:active,
 .mail-link:hover,
-.mail-link:focus {
+.mail-link:focus,
+.mail-link:active {
   color: var(--accent-color);
 }
 
@@ -136,7 +138,7 @@ body {
 }
 
 .hero .order-service:hover,
-.hero .order-service:focus {
+.hero .order-service:focus .hero .order-service:active {
   background-color: var(--accent-color-button);
 }
 
@@ -237,8 +239,10 @@ body {
 
 .footer-address-list .item-mail:hover,
 .footer-address-list .item-mail:focus,
+.footer-address-list .item-mail:active,
 .footer-address-list .item-tel:hover,
-.footer-address-list .item-tel:focus {
+.footer-address-list .item-tel:focus,
+.footer-address-list .item-tel:active {
   color: var(--accent-color);
 }
 
@@ -268,7 +272,8 @@ body {
 }
 
 .portfolio .filters-button:hover,
-.portfolio .filters-button:focus {
+.portfolio .filters-button:focus,
+.portfolio .filters-button:active {
   color: var(--white-color);
   background-color: var(--accent-color);
 }
