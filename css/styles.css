@@ -61,9 +61,9 @@ body {
   font-weight: 700;
   font-size: 26px;
   line-height: 1.192;
+  text-align: left;
   color: var(--black-color);
   text-decoration: none;
-  text-align: left;
 }
 
 .logo .web {
@@ -77,16 +77,16 @@ body {
   line-height: 1.143;
   list-style: none;
   letter-spacing: 0.02em;
+  text-align: left;
 }
 .nav-list a,
 .contact-list a {
   text-decoration: none;
-  color: #212121;
+  color: var(--title-text-color);
   cursor: pointer;
 }
 
 .contact-list a {
-  text-decoration: none;
   color: var(--primery-text-color);
 }
 
@@ -122,6 +122,7 @@ body {
   letter-spacing: 0.06em;
   color: var(--white-color);
   text-transform: uppercase;
+  width: 696px;
 }
 
 .hero .order-service {
@@ -135,6 +136,7 @@ body {
   background-color: var(--accent-color);
   border-style: none;
   cursor: pointer;
+  width: 200px;
 }
 
 .hero .order-service:hover,
@@ -146,19 +148,19 @@ body {
 
 .features .features-list {
   list-style: none;
+  width: 270px;
+  font-size: 14px;
+  text-align: Left;
+  letter-spacing: 0.03em;
 }
 
 .features .title {
-  font-size: 14px;
   line-height: 1.143;
-  text-align: Left;
   text-transform: uppercase;
 }
 
 .features .text {
-  font-size: 14px;
   line-height: 1.1714;
-  text-align: Left;
 }
 
 /* activities */
@@ -171,12 +173,14 @@ body {
 
 .activities .activities-list {
   list-style: none;
+  width: 370px;
 }
 
 /* team */
 .team {
   background-color: var(--bg-color-section);
 }
+
 .team .title {
   font-size: 36px;
   line-height: 1.67;
@@ -185,18 +189,22 @@ body {
 
 .team .team-list {
   list-style: none;
+  width: 270px;
+  font-size: 16px;
+  text-align: Center;
 }
+
 .team-list .title {
   font-weight: 500;
-  font-size: 16px;
   line-height: 1.188;
+  font-size: 16px;
   text-align: Center;
 }
 
 .team-list .text {
   font-weight: 400;
-  font-size: 16px;
   line-height: 1.188;
+  font-size: 16px;
   text-align: Center;
 }
 .team-list .item {
@@ -226,6 +234,7 @@ body {
 
 .footer-address {
   text-decoration: none;
+  width: 231px;
 }
 
 .footer-address .item-address {
@@ -259,7 +268,7 @@ body {
 }
 
 .portfolio .filters-button {
-  font-family: Roboto;
+  font-family: var(--primery-font-family);
   font-weight: 500;
   font-size: 16px;
   line-height: 1.625;
@@ -269,6 +278,10 @@ body {
   background-color: var(--bg-color-section);
   border-style: none;
   cursor: pointer;
+}
+
+.portfolio .projects-item {
+  width: 370px;
 }
 
 .portfolio .filters-button:hover,
@@ -282,15 +295,20 @@ body {
   text-decoration: none;
 }
 
-.pprojects-item .title {
+.projects-item .title,
+.projects-item .text {
+  width: 322px;
+  text-align: left;
+}
+
+.projects-item .title {
   font-size: 18px;
   line-height: 2;
-  text-align: left;
   letter-spacing: 0.06em;
 }
 
-.pprojects-item .text {
+.projects-item .text {
   font-size: 16px;
   line-height: 1.875;
-  text-align: left;
+  letter-spacing: 0.03em;
 }
