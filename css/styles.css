@@ -8,8 +8,8 @@
   --bg-color-section: #f5f4fa;
   --black-color: #000000;
   --address-color: rgba(255, 255, 255, 0.6);
-  --font-family-logo: Raleway, sans-serif;
-  --primery-font-family: Roboto, sans-serif;
+  --font-family-logo: raleway, sans-serif;
+  --primery-font-family: roboto, sans-serif;
 }
 
 /* global */
@@ -26,7 +26,7 @@ body {
 }
 
 .container {
-  width: 1200;
+  width: 1200px;
 }
 
 .title {
@@ -38,6 +38,7 @@ body {
 .text {
   font-weight: 400;
   letter-spacing: 0.03em;
+  color: var(--primery-text-color);
 }
 
 .visually-hidden {
@@ -117,7 +118,7 @@ body {
   font-weight: 900;
   font-size: 44px;
   line-height: 1.363;
-  text-align: Center;
+  text-align: center;
   letter-spacing: 0.06em;
   color: var(--white-color);
   text-transform: uppercase;
@@ -125,11 +126,11 @@ body {
 }
 
 .hero .order-service {
-  font-family: Roboto;
+  font-family: var(--primery-font-family);
   font-weight: 700;
   font-size: 16px;
   line-height: 1.875;
-  text-align: Center;
+  text-align: center;
   letter-spacing: 0.06em;
   color: var(--white-color);
   background-color: var(--accent-color);
@@ -149,7 +150,7 @@ body {
   list-style: none;
   width: 270px;
   font-size: 14px;
-  text-align: Left;
+  text-align: left;
   letter-spacing: 0.03em;
 }
 
@@ -167,7 +168,7 @@ body {
 .activities .title {
   font-size: 36px;
   line-height: 1.167;
-  text-align: Center;
+  text-align: center;
 }
 
 .activities .activities-list {
@@ -178,33 +179,30 @@ body {
 /* team */
 .team {
   background-color: var(--bg-color-section);
+  text-align: center;
 }
 
 .team .title {
   font-size: 36px;
   line-height: 1.67;
-  text-align: Center;
 }
 
 .team .team-list {
   list-style: none;
   width: 270px;
   font-size: 16px;
-  text-align: Center;
 }
 
 .team-list .title {
   font-weight: 500;
   line-height: 1.188;
   font-size: 16px;
-  text-align: Center;
 }
 
 .team-list .text {
   font-weight: 400;
   line-height: 1.188;
   font-size: 16px;
-  text-align: Center;
 }
 .team-list .item {
   background-color: var(--white-color);
@@ -269,7 +267,7 @@ body {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.625;
-  text-align: Center;
+  text-align: center;
   letter-spacing: 0.03em;
   color: var(--title-text-color);
   background-color: var(--bg-color-section);
@@ -286,6 +284,11 @@ body {
 .portfolio .filters-button:active {
   color: var(--white-color);
   background-color: var(--accent-color);
+}
+
+.portfolio .active {
+  background-color: var(--accent-color);
+  color: var(--white-color);
 }
 
 .portfolio .projects-item a {
@@ -308,4 +311,5 @@ body {
   font-size: 16px;
   line-height: 1.875;
   letter-spacing: 0.03em;
+  color: var(--primery-text-color);
 }
